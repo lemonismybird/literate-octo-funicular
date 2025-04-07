@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png" sizes="1280x1280">
+    <script type="importmap">
+        {
+          "imports": {
+            "lodash": "https://cdn.jsdelivr.net/npm/lodash-es@4.17.21/+esm"
+          }
+        }
+      </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 data-i18n="title">Untitled Clicker Game</h1>
+        </div>
+        <div class="click-area">
+            <button id="clickButton" class="click-button" data-i18n="clickMe">Click Me!</button>
+            <div id="score" class="score-display"><span data-i18n="score">Score</span>: <span id="scoreValue">0</span></div>
+        </div>
+
+        <div class="upgrades-area">
+            <h2 data-i18n="upgrades">Upgrades</h2>
+            <div id="upgradesList" class="upgrades-list">
+                <!-- Upgrades will be added here -->
+            </div>
+        </div>
+
+        <div class="customization-area">
+            <h2 data-i18n="customization">Customization</h2>
+            <div class="language-selector">
+                <label for="language" data-i18n="language">Language:</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="ja">日本語</option>
+                    <option value="zh">中文</option>
+                    <option value="ru">Русский</option>
+                    <option value="pt">Português</option>
+                    <option value="nl">Nederlands</option>
+                    <option value="ko">한국어</option>
+                    <option value="ar">العربية</option>
+                    <option value="hi">हिंदी</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="vi">Tiếng Việt</option>
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="th">ภาษาไทย</option>
+                    <option value="pl">Polski</option>
+                    <option value="el">Ελληνικά</option>
+                    <option value="sv">Svenska</option>
+                    <option value="fi">Suomi</option>
+                    <option value="da">Dansk</option>
+                    <option value="no">Norsk</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div id="colorCustomizationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 data-i18n="colorCustomization">Color Customization</h2>
+            <label for="backgroundColor" data-i18n="backgroundColor">Background Color:</label>
+            <input type="color" id="backgroundColor" value="#f4f4f4"><br><br>
+            <label for="buttonColor" data-i18n="buttonColor">Button Color:</label>
+            <input type="color" id="buttonColor" value="#007bff"><br><br>
+            <button id="applyColors" data-i18n="applyColors">Apply Colors</button>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
