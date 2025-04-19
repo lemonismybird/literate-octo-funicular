@@ -1,19 +1,14 @@
 {
-  "name": "RCP Command",
-  "description": "Adds a /rcp command to set custom Rich Presence on Discord Mobile.",
-  "version": "1.0.0",
-  "authors": [
-    {
-      "name": "YourName",
-      "socials": {
-        "github": "your-github",
-        "discord": "your-discord-id"
-      }
+    "name": "BrainFuckEnval",
+    "description": "Adds /bfeval command.",
+    "authors": [
+        {
+            "name": "Rico040",
+            "id": "619474349845643275"
+        }
+    ],
+    "main": "index.js",
+    "vendetta": {
+        "icon": "ChatAlertIcon"
     }
-  ],
-  "license": "MIT",
-  "dependencies": {
-    "vendetta": ">=1.0.0"
-  },
-  "entry": "./index.js"
 }
