@@ -1,0 +1,19 @@
+{
+  "name": "RCP Command",
+  "description": "Adds a /rcp command to set custom Rich Presence on Discord Mobile.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "YourName",
+      "socials": {
+        "github": "your-github",
+        "discord": "your-discord-id"
+      }
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "vendetta": ">=1.0.0"
+  },
+  "entry": "./index.js"
+}
